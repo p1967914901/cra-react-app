@@ -1,8 +1,11 @@
 {
   "name": "cra-react-app",
-  "version": "1.1.0",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/p1967914901/cra-react-app"
+  },
   "scripts": {
     "start": "webpack serve -c ./config/webpack.config.js --env development",
     "build": "webpack -c ./config/webpack.config.js --env production"
