@@ -1,6 +1,6 @@
 {
   "name": "cra-react-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "cli.js",
   "bin": {
     "cra-react-app": "./bin/cli.js"

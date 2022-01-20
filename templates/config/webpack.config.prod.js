@@ -8,28 +8,13 @@ module.exports = {
   module: {
     rules: [{
       test: /\.css$/i,
-      use: [MiniCssExtractPlugin.loader, {
-        loader: "css-loader",
-        options: {
-          modules: true,
-        },
-      }],
+      use: [MiniCssExtractPlugin.loader, "css-loader"],
     }, {
       test: /\.less$/i,
-      use: [MiniCssExtractPlugin.loader, {
-        loader: "css-loader",
-        options: {
-          modules: true,
-        },
-      }, 'less-loader'],
+      use: [MiniCssExtractPlugin.loader, "css-loader", 'less-loader'],
     }, {
       test: /\.s[ac]ss$/i,
-      use: [MiniCssExtractPlugin.loader, {
-        loader: "css-loader",
-        options: {
-          modules: true,
-        },
-      }, 'sass-loader'],
+      use: [MiniCssExtractPlugin.loader, "css-loader", 'sass-loader'],
     }, ]
   },
   plugins: [

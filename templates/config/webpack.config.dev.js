@@ -9,32 +9,16 @@ module.exports = {
     rules: [{
         test: /\.css$/i,
         use: [
-          "style-loader", {
-            loader: "css-loader",
-            options: {
-              modules: true,
-            },
-          }
+          "style-loader", "css-loader"
         ],
       }, {
         test: /\.less$/i,
         use: [
-          "style-loader", {
-            loader: "css-loader",
-            options: {
-              modules: true,
-            },
-          }, 
-          'less-loader'
+          "style-loader", "css-loader", 'less-loader'
         ],
       }, {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", {
-          loader: "css-loader",
-          options: {
-            modules: true,
-          },
-        }, 'sass-loader'],
+        use: ["style-loader", "css-loader", 'sass-loader'],
       },
     ]
   },

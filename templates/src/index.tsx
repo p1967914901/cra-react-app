@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.less';
-
+import './index.css';
 
 const App = () => {
   return (
-    <>
-      <p>hello world</p>
-      <img src={jpg} alt="" width='100px' height='100px'/>
-    </>
+    <p>Hello World</p>
   );
 };
 
